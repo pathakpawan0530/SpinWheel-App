@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin Wheel App</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="icon" href="Images/images.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="spin.css" />
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <div class="timer">
+        <p id="timer-display">Timer 30 </p>
+      </div>
+      <div class="container">
+        <div class="maindiv">
+            <canvas id="wheel"></canvas>
+        <button id="spin-btn">Spin</button>
+        <!-- <img src="Images/arrow.jpeg" alt="spinner arrow" /> -->
+        </div>
+      </div>
+      <div id="final-value">
+   
+      </div>
+      <div class="inputBox">
+        <input class="spinInput" id="set-Val" type="text" placeholder="set spin value" />
+        <button class="btn"  id="setValueBtn" type="button">submit</button>
+      </div>
+      <div class="inputBox">
+        <button class="btn btn-danger"  id="DltSpinVal" type="button">Delete Saved Value.</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Chart JS Plugin for displaying text over chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <!-- Script -->
+    <script src="spinjs.js"></script>
+  </body>
+</html>
