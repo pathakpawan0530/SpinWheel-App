@@ -164,7 +164,7 @@ const runTimmer = () => {
 
 // Timer function
 function startTimer() {
-  let timeLeft = 10;
+  let timeLeft = 30 * 60; // 30 minutes in seconds
 
   const timerDisplay = document.getElementById("timer-display");
 
