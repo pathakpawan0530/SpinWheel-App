@@ -12,7 +12,16 @@
 
     <link rel="stylesheet" href="spin.css" />
   </head>
-  <body class="body">
+  <body class="body" style="background-image: url(Images/Bg.jpeg);">
+  
+    <header>
+      <div>
+        <div class="logo">
+          Batting App ⏱️
+        </div>
+      </div>
+    </header>
+
     <div class="wrapper">
       <div class="timer">
         <p id="timer-display">Timer 30 </p>
@@ -28,11 +37,11 @@
    
       </div>
       <div class="inputBox">
-        <input class="spinInput" id="set-Val" type="text" placeholder="set spin value" />
+        <input class="spinInput" id="set-Val" type="text" autocomplete="off" placeholder="set spin value" />
         <button class="btn"  id="setValueBtn" type="button">submit</button>
       </div>
-      <div class="inputBox">
-        <button class="btn btn-danger"  id="DltSpinVal" type="button">Delete Saved Value.</button>
+      <div class="text-center">
+        <button class="btn red"  id="DltSpinVal" type="button">Delete Saved Value</button>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
