@@ -4,29 +4,42 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body.body{
+body.body {
   height: 100vh;
   background: linear-gradient(135deg, #c3a3f1, #6414e9);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header {
+  padding: 15px 30px;
+  background: #8b35bc4f;
+  box-shadow: 0px 0px 10px 9px #b163dab5;
+}
+.logo {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #fff;
+  line-height: 24px;
 }
 .wrapper {
   width: 90%;
   max-width: 34.37em;
   max-height: 93vh;
-  background-color: #ffffff;
+  background-color: #19648bbd;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 58%;
   left: 50%;
-  padding: 1em 3em 1em;
+  padding: 2em 3em 1em;
   border-radius: 1em;
   box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
-
 }
 .container {
   position: relative;
-  width: 70%;
-  height: 100%;
   margin: auto;
+  width: 51%;
+  height: 100%;
 }
 #wheel {
   max-height: inherit;
@@ -44,15 +57,15 @@ body.body{
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  height: 26%;
-  width: 26%;
+  height: 22%;
+  width: 22%;
   border-radius: 50%;
   cursor: pointer;
   border: 0;
   background: radial-gradient(#fdcf3b 50%, #d88a40 85%);
   color: #c66e16;
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: .8em;
   letter-spacing: 0.1em;
   font-weight: 600;
 }
@@ -66,25 +79,17 @@ img {
   font-size: 1.2em;
   text-align: center;
   margin-top: 1em;
-  color: #202020;
+  color:#fff;
   font-weight: 500;
+  /* font-weight: bolder; */
 }
 .timer {
   margin-bottom: 20px;
   font-size: 1.3em;
   text-align: center;
-  color: #202020;
+  color:#fff;
   font-weight: 500;
 }
-@media screen and (max-width: 768px) {
-  .wrapper {
-    font-size: 12px;
-  }
-  img {
-    right: -5%;
-  }
-}
-
 .inputBox {
   text-align: center;
   margin: 13px 0;
@@ -104,8 +109,23 @@ img {
   color: #fff;
   border: 1px solid #8b35bc;
   border-radius: 0px 5px 5px 0px;
-  cursor: pointer;
 }
-#DltSpinVal{
-  background: #dd3439
+button.btn.red{
+padding: 4px 20px;
+  background: #ff0000;
+  color: #fff;
+  border: 1px solid #ff0000;
+  border-radius: 2px;
+  margin: auto;
+}
+.text-center{
+text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    font-size: 12px;
+  }
+  img {
+    right: -5%;
+  }
 }
