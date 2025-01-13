@@ -171,7 +171,7 @@ function startTimer() {
   function updateDisplay() {
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
-    timerDisplay.textContent = `${minutes < 10 ? "0" : ""}${minutes} m : ${seconds < 10 ? "0" : ""}${seconds} s ⏲️`;
+    timerDisplay.textContent = `${minutes < 10 ? "0" : ""}${minutes} m : ${seconds < 10 ? "0" : ""}${seconds} s ⏱️`;
   }
 
   // Reset pieColors to default colors when the timer restarts
